@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: black;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.sveglia.Controller">
+   <top>
+      <HBox alignment="CENTER" spacing="20.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="accendi" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnAccendiOnClick" text="▶" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnOrarioOnClick" text="🕒" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSvegliaOnClick" text="⏰" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="attiva" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnAttivaOnClick" text="🔔" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnIncrementaOnClick" text="🔼" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSnoozeOnClick" text="💤" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER" style="-fx-background-color: darkseagreen;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" minHeight="143.0" minWidth="285.0" style="-fx-border-style: solid;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="meridiemOrario" minHeight="55.0" minWidth="38.0" text="AM">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding></Label>
+                  <Label fx:id="oraOrario" alignment="CENTER_RIGHT" minHeight="101.0" minWidth="97.0" text="00">
+                     <font>
+                        <Font size="96.0" />
+                     </font></Label>
+                  <Label fx:id="_Orario" minHeight="141.0" minWidth="21.0" text=":">
+                     <font>
+                        <Font size="96.0" />
+                     </font></Label>
+                  <Label fx:id="minutoOrario" alignment="CENTER_RIGHT" minHeight="101.0" minWidth="97.0" text="00">
+                     <font>
+                        <Font size="96.0" />
+                     </font></Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="10.0" />
+               </padding>
+            </HBox>
+            <VBox alignment="CENTER" minHeight="143.0" minWidth="160.0" style="-fx-border-style: solid;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label fx:id="alText" minHeight="35.0" minWidth="27.0" text="AL">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                        <Label fx:id="bellText" minHeight="35.0" minWidth="24.0" text="🔔">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label fx:id="meridiemSveglia" minHeight="27.0" minWidth="19.0" text="AM">
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding></Label>
+                        <Label fx:id="oraSveglia" alignment="CENTER_RIGHT" minHeight="52.0" minWidth="49.0" text="00">
+                           <font>
+                              <Font size="48.0" />
+                           </font></Label>
+                        <Label fx:id="_Sveglia" minHeight="70.0" minWidth="11.0" text=":">
+                           <font>
+                              <Font size="48.0" />
+                           </font></Label>
+                        <Label fx:id="minutoSveglia" alignment="CENTER_RIGHT" minHeight="52.0" minWidth="49.0" text="00">
+                           <font>
+                              <Font size="48.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</BorderPane>
